@@ -145,10 +145,11 @@ html.with-featherlight {
 		/* dimensions: maximize lightbox with for small screens */
 		margin-left: 0;
 		margin-right: 0;
-		max-height: 98%;
+		max-height: 85%;
 
 		padding: 10px 10px 0;
 		border-bottom: 10px solid transparent;
+        width: 80vw;
 	}
 }
 

@@ -60,7 +60,7 @@ a, a:hover, a:focus{text-decoration: none;}
 p{margin: 0 0 1em 0; }
 figure{margin: 0px;}
 @mixin mbtn{ min-width: 100px; text-align: center; display: block; min-height: 30px;}
-.fold1-wrap{    width:100%; min-height: 600px; padding-bottom: 50px; position: relative; background: url(../minify/img/wrap-one-backgrnd.jpg) no-repeat;
+.fold1-wrap{    width:100%; min-height: 600px; padding-bottom: 50px; position: relative; background: url(../minify/img/wrap-one-backgrnd.jpg) no-repeat; background-size: cover;
     & .main-head{padding:15px 0 15px; width: 100%;
         & figure{margin: 0px;}
 & nav{
@@ -432,3 +432,70 @@ footer{ color: #fff; padding: 15px 0 4px;
 .floating_icons a.whstapp_float{color:#fff}
 .floating_icons a.phone_float{color:#fff}
 .my-float{margin-top:16px}
+
+/***********Responsive Menu**********/
+.button_container{position:fixed;top:7%;right:2.5%;height:27px;width:35px;cursor:pointer;z-index:100;-webkit-transition:opacity .25s ease;transition:opacity .25s ease}
+.button_container:hover{opacity:.7}
+.button_container.active .top{-webkit-transform:translateY(10px) translateX(0) rotate(45deg);transform:translateY(10px) translateX(0) rotate(45deg);background:#FFF}
+.button_container.active .middle{opacity:0;background:#FFF}
+.button_container.active .bottom{-webkit-transform:translateY(-10px) translateX(0) rotate(-45deg);transform:translateY(-10px) translateX(0) rotate(-45deg);background:#FFF}
+.button_container span{background:#ffd000;border:none;height:5px;width:100%;position:absolute;top:0;left:0;-webkit-transition:all .35s ease;transition:all .35s ease;cursor:pointer}
+.button_container span:nth-of-type(2){top:10px}
+.button_container span:nth-of-type(3){top:20px}
+.overlay{position:fixed;top:0;left:0;width:100%;height:100%;opacity:1;visibility:hidden;-webkit-transition:opacity .35s,visibility .35s,width .35s;transition:opacity .35s,visibility .35s,width .35s;z-index:50}
+.overlay:before{content:'';background:#459BC0;left:-55%;top:0;width:50%;height:100%;position:absolute;-webkit-transition:left .35s ease;transition:left .35s ease}
+.overlay:after{content:'';background:#459BC0;right:-55%;top:0;width:50%;height:100%;position:absolute;-webkit-transition:all .35s ease;transition:all .35s ease}
+.overlay.open{opacity:.9;visibility:visible;height:100%}
+.overlay.open:before{left:0}
+.overlay.open:after{right:0}
+.overlay.open li{-webkit-animation:fadeInRight .5s ease forwards;animation:fadeInRight .5s ease forwards;-webkit-animation-delay:.35s;animation-delay:.35s}
+.overlay.open li:nth-of-type(2){-webkit-animation-delay:.45s;animation-delay:.45s}
+.overlay.open li:nth-of-type(3){-webkit-animation-delay:.55s;animation-delay:.55s}
+.overlay.open li:nth-of-type(4){-webkit-animation-delay:.65s;animation-delay:.65s}
+.overlay nav{position:relative;height:70%;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);font-size:50px;font-family:inherit;text-align:center;z-index:100}
+.overlay ul{list-style:none;padding:0;margin:0 auto;display:inline-block;position:relative;height:100%}
+.overlay ul li{display:block;height:25%;height:calc(50% / 4);min-height:50px;position:relative;opacity:0}
+.overlay ul li a{display:block;text-decoration:none;overflow:hidden;color: #fff;text-transform:uppercase; position: relative;  display: block; font-size:32px; font-weight:700;padding:10px 10px; }
+.overlay ul li a:hover:after,.overlay ul li a:focus:after,.overlay ul li a:active:after{width:100%}
+.overlay ul li a:after{content:'';position:absolute;bottom:0;left:50%;width:0;-webkit-transform:translateX(-50%);transform:translateX(-50%);height:3px;background:#FFF;-webkit-transition:.35s;transition:.35s}
+@-webkit-keyframes fadeInRight {
+0%{opacity:0;left:20%}
+100%{opacity:1;left:0}
+}
+@keyframes fadeInRight {
+0%{opacity:0;left:20%}
+100%{opacity:1;left:0}
+}
+
+/***Reponsive***/
+@media (min-width:100px) and (max-width:940px){
+    .fold1-wrap__inner-section {
+        & h1{font-size: 2.5rem;}
+        & h3{font-size: 1.5rem;}
+    }
+    .fold1-wrap .main-head nav ul li{display: block; margin: 0px;}
+    .fold1-wrap__inner--left{ margin-bottom: 40px; }
+    .floating_icons{display: none;}
+    .fold2-abt-wrap--text{margin: 20px 0;}
+    .fold2-abt-wrap__rht{ text-align: center; align-content: center;
+        & figure{
+            & img{margin: 0px auto; display: block;}
+        }
+    }
+    .keynote-speaker-wrap{text-align: center;}
+    footer{
+        text-align: center;
+        & .footer-wrap1 ul li{    margin-bottom: 21px;}
+        & .footer-btm{
+            & .copyright{ font-size: 1.0rem;
+                 text-align: center; padding-top: 2px;
+            }
+            & .footer-menu ul{float:none;padding: 0px 0 21px;}
+           }
+    } 
+    .main-nav{display: none;}
+}
+
+@media (min-width:400px) and (max-width:640px){
+    .fold3 .keynote-speaker-wrap figure{    margin: 0px 46px;}
+}

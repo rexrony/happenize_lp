@@ -239,7 +239,13 @@ $(document).ready(function() {
     });
 });
     
-
+/***Responsive Menu***/
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   //$(this).addClass('active');
+   $('#overlay').toggleClass('open');
+    //$('#overlay').addClass('open');
+  });
 
 
 
