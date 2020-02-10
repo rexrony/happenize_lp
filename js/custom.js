@@ -247,6 +247,12 @@ $('#toggle').click(function() {
     //$('#overlay').addClass('open');
   });
 
+$('.overlay-menu ul li a').click(function() {
+   $(".button_container").toggleClass('active');
+   //$(this).addClass('active');
+   $('#overlay').toggleClass('open');
+    //$('#overlay').addClass('open');
+  });
 
 
 
