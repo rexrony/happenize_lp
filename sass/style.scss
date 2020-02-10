@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "../sass/hover.scss";
+@import "../node_modules/animate.css/animate.min.css";
+@import "css/aos.css";
 @font-face {
   font-family: 'BrandonGrotesque-Light';
   src: url('../fonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/BrandonGrotesque-Light.otf')  format('opentype'),
@@ -76,7 +78,7 @@ figure{margin: 0px;}
     text-align: center;
             & div{font-size: 20px;  color: #fff;text-transform: uppercase; margin: 0px 0px 15px 15px;text-align: center; display: inline-block; 
                 &:nth-child(1){margin-left: 0px;}
-                & .timewrap{border-radius:50px; border:1.5px solid #fff;width: 88px; height: 86px; line-height: 80px; font-family: $brandonbold; font-size: 30px; text-align: center;}
+                & .timewrap{border-radius:50px; border:1.5px solid #fff;width: 88px; height: 86px; line-height: 80px; font-family: $brandonbold; font-size: 30px; text-align: center;user-select: none;}
                 & span{display: block;  font-size: 20px;  color:#fff;font-family:$brandonlight; }
             }
            
@@ -169,7 +171,7 @@ figure{margin: 0px;}
                 display: block; margin: 0px auto; max-width: 100%;
             }
         }
-        & .txt-overlay{position: absolute; width: 100%; min-height: 200px; border:1px solid #fff; color: #fff; left: 0px; right:0px; top:0px; padding:12px; background: #051f3fc7; z-index: 1; opacity:0;  margin: 0px auto; 
+        & .txt-overlay{position: absolute; width: 100%; min-height: 260px; border:1px solid #fff; color: #fff; left: 0px; right:0px; top:0px; padding:12px; background: #051f3fc7; z-index: 1; opacity:0;  margin: 0px auto; 
 -moz-transform: translateY(290px);
 -webkit-transform: translateY(290px);
 -o-transform: translateY(290px);
@@ -180,7 +182,10 @@ transform: translateY(290px);
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-            & p{ margin:0px; font-size: 14px; line-height:20px;text-align: justify;}
+            & p{ margin:0px; font-size: 14px; line-height:20px;text-align: justify;
+                & a{color: #fff;font-size: 16px; font-weight: 600; text-align: right; display: block; margin: 8px 0 0; }
+            }
+            
         }
         &:hover .txt-overlay{opacity:1;
                         -webkit-transition: all 1s ease-in-out;
@@ -206,6 +211,15 @@ transform: translateY(0px);
             }
         }
     }
+}
+.keynote-popup-content{padding:30px;width: 100%; height: 100%;max-height: 80vh; position: relative;border: 1px solid #000; overflow-y: scroll;    
+    & p{margin: 0 0 0.6em 0; font-size: 1rem;}
+    & .txt-overlay-fulltext{
+        & h3{font-size: 2rem; color: #19406f; font-family: $brandonblack; margin:0px 0 10px;text-transform:capitalize; } 
+    }
+}
+.fold3 .others-speakers-wrapper .keynote-speaker-wrap .txt-overlay{
+    min-height: 280px;
 }
 .agenda-container{ width: 100%; min-height: 300px; position: relative; padding: 50px 0;
     & .section-header{width: 100%; 
@@ -383,7 +397,7 @@ footer{ color: #fff; padding: 15px 0 4px;
 .popup{ font-family: 'Open Sans'; font-size: 16px; color: #727272;
    
     &-banner{
-     & img{    position: relative;  top: -27px;  left: -56px;  z-index: 99999;  }
+     & img{    position: relative;  top:-55px;  left: -58px;  z-index: 99999;  }
     }
     &-head-middle, &-head-rht{ text-align: center; vertical-align: middle;width: 35%;
         & b{font-weight: 600;}
@@ -405,4 +419,16 @@ footer{ color: #fff; padding: 15px 0 4px;
     }
     
 }
+.abt-popup{
+    &-detail{
+        padding:20px; border: 1px solid #000;
+    }
+}
     
+.floating_icons{position:fixed;width:70px;top:40%;z-index:100;bottom:auto;right:0}
+.floating_icons ul{margin:0;padding:0;list-style:none}
+.floating_icons ul li{margin:0 0 20px;display:block; }
+.floating_icons ul li a{display:block;width:50px;height:50px;background-color:#000;border-radius:50px;text-align:center;font-size:30px;box-shadow:2px 2px 3px #999}
+.floating_icons a.whstapp_float{color:#fff}
+.floating_icons a.phone_float{color:#fff}
+.my-float{margin-top:16px}

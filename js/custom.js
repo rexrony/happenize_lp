@@ -1,7 +1,8 @@
+// Timer Count Down
 function makeTimer() {
 
-	//		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
-		var endTime = new Date("01 March 2020 9:56:00 GMT+01:00");			
+			var endTime = new Date("12 April 2020 7:30:00 UTC+04:00");	
+	//	var endTime = new Date("01 March 2020 9:56:00 GMT+01:00");			
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
@@ -146,7 +147,7 @@ $(window).scroll(function() {
   }
 
 });
-/*----------------------------------------------------Back to top---------------------------------------------------------------*/
+/*--------------------------------Back to top----------------------------------*/
 $(document).ready(function(){$("#back-top").hide();$(function(){$(window).scroll(function(){if($(this).scrollTop()>100){$("#back-top").fadeIn()}else{$("#back-top").fadeOut()}});$("#back-top a").click(function(){$("body,html").animate({scrollTop:0},800);return false})})});
 
 /****onclick scroll*****/
@@ -160,4 +161,106 @@ $('a[href*=\\#]:not([href=\\#])').on('click', function() {
       return false;
   }
 });
+    // AOS
+    AOS.init({
+      easing: 'ease-in-out',
+      delay: 300,
+      duration: 800,
+      offset: 200,
+      disable: 'mobile'
+    });
+
+ /***Form Validation****/
+$("#contact-attorney .btn").click(function(e){
+      e.preventDefault();
+  var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
+var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+     var name = $("#fullname").val();
+     var emailaddress = $("#user_email").val();
+   var phone = $("#user_phone").val();
+   
+      if(name == "" || name.length < 3){  $("#name-error").html('Please Enter Name'); }
+      else{ $("#name-error").html(''); }
+     //email
+ 
+if (emailaddress == "") { $("#email-error").html('Please Enter Email');
+console.log('Please Enter Email'); 
+return false;
+                                  
+} 
+else if(!emailReg.test(emailaddress)) {
+$("#email-error").html('Please enter valid email ID');
+return false;
+}
+else {
+$("#email-error").html('');
+}
+/**Phone***/
+if(phone == ""){ 
+
+ $("#phone-error").html('Please Enter Phone Number');
+
+}
+else if(phone.length < 9){
+$("#phone-error").html('Please Enter Proper Number');
+
+} else{ $("#phone-error").html(''); 
+
+
+  $.ajax({
+    type: "POST",
+     url: 'http://happenizedev.com/sulayemlegal/thankyou.php',
+    data: 'jx=1&name=' + name + '&email=' + emailaddress + '&phone=' +phone,
+    success: function (data) {
+    
+      window.location.href = "http://happenizedev.com/sulayemlegal/thankyou.html";
+    console.log(data);
+    
+    }
+  }); 
+  
+}
+      
+      
+      
+  });
+$(document).ready(function() {
+   // $('.speakerdetail').hide();
+    $('.speakerdetail').click(function() {
+         var pID = $(this).data("id");       
+        $('.keynote-popup-content').html('');       
+        $( "#"+pID ).clone().appendTo( ".keynote-popup-content" );
+        $('.keynote-popup-content .txt-overlay-fulltext').show();
+        //console.log('check '+ pID);
+    });
+    
+    $('.featherlight-close').click(function() {
+        $('.keynote-popup-content .txt-overlay-fulltext').hide();
+    });
+});
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

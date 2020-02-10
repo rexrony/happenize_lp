@@ -1,6 +1,14 @@
 <!doctype html>
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+<link rel="manifest" href="./img/site.webmanifest">
+<link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <title>ACAA</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,6 +16,7 @@
 <link href="./css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="./css/intlTelInput.min.css">
 <link type="text/css" rel="stylesheet" href="./css/featherlight.css" />
+<link type="text/css" rel="stylesheet" href="./css/aos.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
 </head>
@@ -39,9 +48,9 @@
     <div id="home" class="fold1-wrap__inner pt-sm-3 pt-5 pb-4 mt-sm-3 mt-md-5 mt-lg-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 mb-sm-4 fold1-wrap__inner--left mt-sm-1 mt-md-5">
+                <div class="col-md-8 mb-sm-4 fold1-wrap__inner--left mt-sm-1 mt-md-5" data-aos="fade-up" data-aos-delay="100">
                    <section class="fold1-wrap__inner-section">
-                    <h3>the flavour of 6  Conferences in 1 -    <a href="" class="typewrite" data-period="2000" data-type='[ "Technology", "Gaming", "Web Development"]'>
+                    <h3>the flavour of 6  Conferences in 1 -    <a href="" class="typewrite" data-period="2000" data-type='[ "AI","Banking", "Governance","Risk", "Technology", "Transformation"]'>
                       <span class="wrap"></span>
                     </a></h3>
                     <h1>20th annual regional audit conference</h1>
@@ -52,7 +61,7 @@
                    </section>
       
                 </div>
-                <div class="col-md-4 fold1-wrap__inner--right">
+                <div class="col-md-4 fold1-wrap__inner--right"  data-aos="fade-up" data-aos-delay="200">
                 <section class="fold1-wrap__inner-rht">
                 <figure>
                     <img src="./minify/img/Register-now.png" alt="Register Now">
@@ -60,22 +69,26 @@
                  <div class="clear"></div>
                  <section class="register_form_wrap">
                  <form action="">
-                  <div class="form-group"><input type="text" class="form-control" id="name" placeholder="Name"></div>
-                   <div class="form-group"><input type="email" class="form-control" id="user_email" placeholder="Email"></div>
-                   <div class="form-group"><input type="tel" class="form-control" id="user_phone" placeholder="Phone"></div>
+                  <div class="form-group"><input type="text" class="form-control" id="fullname" placeholder="Name">
+                    <span id="name-error"></span>
+                  </div>
+                   <div class="form-group"><input type="email" class="form-control" id="user_email" placeholder="Email">
+                    <span id="email-error"></span>
+                  </div>
+                   <div class="form-group"><input type="tel" class="form-control" id="user_phone" placeholder="Phone">
+                    <span id="phone-error"></span>
+                  </div>
                    <div class="form-group"><input type="submit" value="Submit" class="hvr-shrink" /></div>
                 </form>
-                 </section>
-       
-                </section>
-     
+                 </section>       
+                </section>   
                  
                 </div>
             </div>
         </div>
     </div><!--.fold1-wrap__inner-->
     <div class="clear"></div>
-    <div class="fold1-wrap--timer w-100 ">
+    <div class="fold1-wrap--timer w-100 "  data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto">
@@ -99,20 +112,21 @@
          <div class="container">
              <div class="row">
  
-                <section class="fold2-abt-heading text-center col-md-12 ">
+                <section class="fold2-abt-heading text-center col-md-12"  data-aos="fade-up" data-aos-delay="100">
                     <h3>About us</h3>
                 </section>
                 <div class="fold2-abt-wrap"> 
                     <div class="row m-0">
-                     <div class="col-md-3  fold2-abt-wrap__lft"><figure class="mt-2 mb-0 ml-0 mr-0 "><img class="ml-auto mr-auto d-block" src="./minify/img/arac-logo.jpg" alt="arac"></figure></div>
-                     <div class="fold2-abt-wrap--text col-md-6">
+                     <div class="col-md-3  fold2-abt-wrap__lft"  data-aos="fade-up" data-aos-delay="200">
+                       <figure class="mt-2 mb-0 ml-0 mr-0 "><img class="ml-auto mr-auto d-block" src="./minify/img/arac-logo.jpg" alt="arac"></figure></div>
+                     <div class="fold2-abt-wrap--text col-md-6"  data-aos="fade-up" data-aos-delay="300">
                          <p>
 The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Shaping IA” will be held from April 12 - 14, 2020 at the Dubai International Convention and Exhibition Center. The 20th ARAC is widely considered the largest “Smart” conference and premier training event related to Internal Audit in the Middle East. The Conference is preceded by a Pre-conference workshop day on 12th April 2020. Targeting 1500+ professionals to attend the event from the Middle East & North Africa region, the conference will give the delegates a great opportunity to interact with the who’s who and hear some great speakers and professionals who have in them the ability to influence change in the profession. This future-oriented conference boasts of world-class professional development sessions.
                          </p>
-                         <p><a  class="mbtn hvr-grow" href="#_">Read More</a></p>
+                         <p><a data-aos="fade-up" data-aos-delay="200" class="mbtn hvr-grow" data-featherlight="#abt_readmore" href="#_">Read More</a></p>
                      </div>
-                        <div class="col-md-3 fold2-abt-wrap__rht">
-                            <a href="#"><figure><img src="./minify/img/download-img.png" alt=""></figure>
+                        <div class="col-md-3 fold2-abt-wrap__rht"  data-aos="fade-up" data-aos-delay="400">
+                            <a target="_blank" href="https://www.uaeiaa.org/writereaddata/images/pdf/conference-brochure-2020.pdf"><figure><img src="./minify/img/download-img.png" alt=""></figure>
                             <span class="downloadbtn"><img src="./minify/img/download-btn.png" alt="download-btn"></span>
                             </a>
                         </div>
@@ -125,7 +139,7 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
      <div class="counter-wrap pt-3 pb-3">
        <div class="container">
          <div  id="counter" class="row">
-<div class="col-md-3 counter-wrap--count">
+<div class="col-md-3 counter-wrap--count"  data-aos="fade-up" data-aos-delay="100">
   <section>
     <span>Network with</span>
     <h3><count class="counter-value" data-count="1500">0</count>+</h3>
@@ -133,7 +147,7 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
   </section>
 
 </div><!--. counter-wrap--count-->
-<div class="col-md-3 counter-wrap--count">
+<div class="col-md-3 counter-wrap--count"  data-aos="fade-up" data-aos-delay="200">
   <section>
     <span>Engage With</span>
     <h3><count class="counter-value" data-count="25">0</count>+</h3>
@@ -141,15 +155,15 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
   </section>
 
 </div><!--. counter-wrap--count-->
-<div class="col-md-3 counter-wrap--count">
+<div class="col-md-3 counter-wrap--count"  data-aos="fade-up" data-aos-delay="300">
   <section>
     <span>Earn Up to</span>
-    <h3><count class="counter-value" data-count="20">0</count>+</h3>
+    <h3><count class="counter-value" data-count="20">0</count></h3>
     <span>CPEs</span>
   </section>
 
 </div><!--. counter-wrap--count-->
-<div class="col-md-3 counter-wrap--count">
+<div class="col-md-3 counter-wrap--count"  data-aos="fade-up" data-aos-delay="400">
   <section>
     <span>Learn From</span>
     <h3><count class="counter-value" data-count="20">0</count>+</h3>
@@ -161,21 +175,36 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
        </div><!--.container-->
      </div><!--.counter-wrap-->
  </div><!--.fold2-->
-<div id="keynote" class="fold3 keynote">
+<div id="keynote" class="fold3 keynote"  data-aos="fade-up" data-aos-delay="100">
 <div class="keynote-speaker w-100 mb-2">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <section class="text-center keynote-header section-header mb-5">
+          <section class="text-center keynote-header section-header mb-5" data-aos-offset="200"  data-aos="fade-up" data-aos-delay="200">
             <h2>Keynote Speaker</h2>
           </section>
 
         </div>
         <div class="clearfix"></div>
-    <div class="col-md-3 col-sm-4">
+    <div class="col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300">
       <section class="keynote-speaker-wrap">
         <section class="txt-overlay">
-          <p>Experience Jordan Belfort live and in-person as he delivers a powerful and exiting blend of master level sales training, balanced by stories centering on his unique life experiences.He starts off by relating some highly entertaining backstory on the Wolf of Wall Street movie, then moves into a history of his famous Straight Line Persuasion System, and why he was inspired to invent it.</p>
+          <p>Jordan Belfort is the number one sales trainer in the world and has created more million-dollar producers than all other sales trainers combined. His famous Straight Line System, used to train the most effective salesforces in the world, has been curated over the last thirty years and refined into a foolproof solution</p>
+          <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote1"  href="#">Read More</a></p>
+          <div id="keynote1" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Jordan Belfort</h3>
+              <p>Jordan Belfort is the number one sales trainer in the world and has created more million-dollar producers than all other sales trainers combined. His famous Straight Line System, used to train the most effective salesforces in the world, has been curated over the last thirty years and refined into a foolproof solution for turning virtually any individual into a world-class closer and top producer in their field.</p>
+
+              <p>Jordan is the best-selling author of three iconic books: Wolf of Wall Street, Catching the Wolf of Wall Street, and The Way of the Wolf. He is also the subject of the blockbuster movie, The Wolf of Wall Street, starring Leonardo DiCaprio and directed by Martin Scorsese, that was nominated for five Academy Awards.</p>
+
+              <p>Jordan is a dynamic and powerful motivational speaker on an international scale. He has toured the world multiple times performing live, in-person training events to millions of ambitious and forward-thinking salespeople, executives, and entrepreneurs, all of whom have benefited greatly from his unparalleled wisdom, experience, and boundless energy.</p>
+
+              <p>Fortune 500 companies, top tier financial institutions, major healthcare corporations, internationally renowned universities, and top players in the transportation industry are just some of the organizations who have reaped huge benefits from being trained by Jordan Belfort.</p>
+
+              <p>Jordan continues to present his Straight Line System in virtually every country on the map. From Eastern Europe to South America, from Scandinavia to Australia, Jordan has helped millions of ordinary people earn more income and live happier, more empowered lives.</p>
+
+              <p>He's presented in Canada, Germany, France, Mongolia, Russia, China, Hong Kong, Taiwan, Malaysia, Thailand, Singapore, Indonesia, Turkey, Israel, Finland, Chile, Ecuador, New Zealand, Mexico, Iceland, Scotland, Brazil, Dubai, Kuwait, Oman, Vietnam, Amsterdam, Poland, Romania, Bulgaria, South Africa, Zambia, Switzerland, Japan and, of course, the Unites States.</p>
+          </div>
         </section>
         <figure><img src="./minify/img/speakers_03.jpg" alt="Jordan Belfort">
          <span class="img-caption">
@@ -186,12 +215,23 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
       </section><!--.keynote-speaker-wrap-->
      
     </div><!--.col-md-3 -->
-    <div class="col-md-3 col-sm-4">
+    <div class="col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="400">
       <section class="keynote-speaker-wrap">
         <section class="txt-overlay">
-          <p>Experience Jordan Belfort live and in-person as he delivers a powerful and exiting blend of master level sales training, balanced by stories centering on his unique life experiences.He starts off by relating some highly entertaining backstory on the Wolf of Wall Street movie, then moves into a history of his famous Straight Line Persuasion System, and why he was inspired to invent it.</p>
+          <p>The future is here and her name is Sophia, the world’s very first humanoid celebrity. The toast of the Tonight Show with Jimmy Fallon, Sophia has graced the cover of Elle magazine, appeared on Chinese television, spoken before the United Nations General Assembly.</p>
+          <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote2"  href="#">Read More</a></p>
+          <div id="keynote2" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Sophia</h3>
+              <p>The future is here and her name is Sophia, the world’s very first humanoid celebrity. The toast of the Tonight Show with Jimmy Fallon, Sophia has graced the cover of Elle magazine, appeared on Chinese television, spoken before the United Nations General Assembly and named the first non-human citizen of Saudi Arabia. Wowing awestruck audiences with her superhuman intelligence and advanced ability to read faces, empathize with emotions, understand the nuances of language and communicate with thousands of facial expressions, Sophia has discussed subjects ranging from “Will robots take over the world?” to how artificial intelligence could end hunger in developing nations. Sophia interacts with humans in a profoundly personal way, previewing a fast-approaching future where friendly, caring humanoids help us solve our most challenging problems to create a better world.</p>
+
+              <p>From Hong Kong to the U.S., Europe and Australia, Sophia has sung in concert, addressed audiences in Mandarin, debated the future of the human race (against another robot), and generated billions of views and social media interactions. She has also displayed her expansive tech knowledge and growing business savvy, meeting with leaders in the banking, insurance, automotive, property development, media and entertainment industries. A versatile and ingenious presenter who customizes her appearances with encyclopedic event-specific content, Sophia has appeared as a panel-member and speaker at high-level conferences, addressing how robotics and artificial intelligence will become an integral part of everyone’s everyday lives and work.</p>
+
+              <p>Sophia is the brain child of Dr. David Hanson of Hong Kong-based Hanson Robotics, a modern-day renaissance man who has built a reputation for creating the world’s most humanlike robots. A former Disney Imagineer, Dr. Hanson’s mission is to create genius machines that are smarter than humans and able to learn creativity, empathy and compassion.</p>
+
+              <p>Appearing alongside Dr. Hanson or on her own, Sophia enchants audiences with a captivating, interactive look at the awe-inspiring potential of AI and robotics. She also provides enlightening insights into the provocative moral and ethical questions that accompany non-human intelligent lifeforms. As both the state-of-the art in technology and the state-of-the-heart in human-humanoid relations, Sophia always draws a crowd and brings a unique and unforgettable experience to any event.</p>
+          </div>
         </section>
-        <figure><img src="./minify/img/speakers_05.jpg" alt="Sophia">
+        <figure><img src="./minify/img/sophia.png" alt="Sophia">
         <span class="img-caption">
             <h5>Sophia</h5>
             <h6>Advanced Humanoid</h6>
@@ -200,40 +240,71 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
       </section><!--.keynote-speaker-wrap-->
      
     </div><!--.col-md-3 -->
-    <div class="col-md-3 col-sm-4">
+    <div class="col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="500">
       <section class="keynote-speaker-wrap">
         <section class="txt-overlay">
-          <p>Experience Jordan Belfort live and in-person as he delivers a powerful and exiting blend of master level sales training, balanced by stories centering on his unique life experiences.He starts off by relating some highly entertaining backstory on the Wolf of Wall Street movie, then moves into a history of his famous Straight Line Persuasion System, and why he was inspired to invent it.</p>
+          <p>H.E. Dr. Rashid Alleem is ranked third among the 25 most influential CEOs in GCC and is considered one of the 100 most influential CEOs in the Middle East. He is a passionate writer; an environmentalist; a sought-after thought leader. </p>
+             <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote3"  href="#">Read More</a></p>
+          <div id="keynote3" class="txt-overlay-fulltext" style="display: none;">
+             <h3>H.E. Dr. Rashid Alleem</h3>
+              <p>H.E. Dr. Rashid Alleem is ranked third among the 25 most influential CEOs in GCC and is considered one of the 100 most influential CEOs in the Middle East. He is a passionate writer; an environmentalist; a sought-after thought leader; the creator of Thinking, a unique blend of “critical and lateral” thinking; and an internationally respected transformational leader. </p>
+
+              <p>The founder of Alleem Knowledge Center, Dr. Alleem is a dynamic leader who has worked with prestigious governmental, semigovernmental, and nonprofit organizations. He is an entrepreneur par excellence with a flair for effective, strategic decision-making by means of innovative thinking. Dr. Rashid was recognized as “The Knowledge Ambassador of the UAE” by His Highness Sheikh Mohammed bin Rashid Al Maktoum—the Vice President and Prime Minister of the UAE and ruler of the Emirate of Dubai—and as “Environmentalist of the Year 2012” by the fourth Prime Minister of Malaysia, Dr. Mahathir Mohamad.</p>
+          </div>
         </section>
-        <figure><img src="./minify/img/speakers_07.jpg" alt="Dr. Rashid ellem">
+        <figure><img src="./minify/img/rashid.png" alt="Dr. Rashid ellem">
                 <span class="img-caption">
-            <h5>Dr. Rashid Ellem</h5>
+            <h5>H.E. Dr. Rashid Alleem</h5>
+            <h6>Chairman, Sharjah Electricity & Water Authority (SEWA)</h6>
         </span>
         </figure>
       </section><!--.keynote-speaker-wrap-->
      
     </div><!--.col-md-3 -->
-    <div class="col-md-3 col-sm-4">
+    <div class="col-md-3 col-sm-4" data-aos-offset="200" data-aos="fade-up" data-aos-delay="600">
       <section class="keynote-speaker-wrap">
         <section class="txt-overlay">
-          <p>Experience Jordan Belfort live and in-person as he delivers a powerful and exiting blend of master level sales training, balanced by stories centering on his unique life experiences.He starts off by relating some highly entertaining backstory on the Wolf of Wall Street movie, then moves into a history of his famous Straight Line Persuasion System, and why he was inspired to invent it.</p>
+          <p>Terry Cutler is a federal government-cleared cybersecurity expert who specializes in the anticipation, assessment, and prevention of security breaches for governments, corporations, businesses, and consumers, as well as Internet Safety for Children.</p>
+             <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote4"  href="#">Read More</a></p>
+          <div id="keynote4" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Terry Cutler</h3>
+              <p>Terry Cutler is a federal government-cleared cybersecurity expert who specializes in the anticipation, assessment, and prevention of security breaches for governments, corporations, businesses, and consumers, as well as Internet Safety for Children.</p>
+
+              <p>As an award-winning information security strategist for almost 20 years and was recently named to IFSEC Global’s Top 20 most influential cybersecurity expert for 2018 and again in 2019, Mr. Cutler has advised some of Canada’s largest companies on how to prevent and remedy internal and external security penetration.</p>
+
+              <p>Scott has been featured on New York Times, TIME, Forbes, The Washington Post, WIRED, TechCrunch, Inc., Pew Research, Chicago Tribune, InformationWeek, Forrester, Gigaom, ReadWrite, Shots Magazine, Business News Daily, IBM Big Data & Analytics, Intel, Geektime, Examiner, TechBeacon, EE Times, IEEE, El País, Costco Magazine, and television and radio programs. He has spoken or scheduled to speak at TED, European Commission, World Economic Forum, ITU Telecom World (United Nations), International CES, SXSW, IBM Insight, IBM Amplify, IBM Watson IoT, IBM InterConnect, PTC LiveWorx, AMEX, SAP, CRM Evolution, THINK!, NED, Cloud Expo Europe, Cloud & DevOps World, KAIST, Samsung SDS, ArabNet Dubai & Riyadh, Internet Summit, JCK Las Vegas, Customer Service Experience, Razorfish Tech Summit, Location & Context World, Internet of Things World, K-Global Startup, and more. Scott is the co-author of Internet of Things and Data Analytics Handbook, an academic publication by John Wiley and Sons and The Advances in Information Security, Privacy, & Ethics (AISPE) Book Series: Managing Security Issues and the Hidden Dangers of Wearable Technologies, an academic publication by IGI Global.</p>
+
+              <p>Scott is the author of Strive: <a href="https://www.amazon.com/Strive-Doing-Things-Uncomfortable-Success/dp/1119387302">How Doing the Things Most Uncomfortable Leads to Success,</a> which has been endorsed by Tony Robbins, Forbes, Singularity University, Tribeca Film Festival, and other global influencers</p>
+          </div>
         </section>
-        <figure><img src="./minify/img/speakers_09.jpg" alt="Terry Cutler">
+        <figure><img src="./minify/img/terry.png" alt="Terry Cutler">
        <span class="img-caption">
             <h5>Terry Cutler</h5>
-            <h6>Ethical Hacker, Cyber Security Expert Cytologist</h6>
+            <h6>Cyology Labs Canada and Ethical Hacker</h6>
         </span>
         </figure>
       </section><!--.keynote-speaker-wrap-->
      
     </div><!--.col-md-3 -->
 
-    <div class="col-md-3 col-sm-4">
+    <div class="col-md-3 col-sm-4"  data-aos-offset="300"  data-aos="fade-up" data-aos-delay="700">
       <section class="keynote-speaker-wrap">
         <section class="txt-overlay">
-          <p>Experience Jordan Belfort live and in-person as he delivers a powerful and exiting blend of master level sales training, balanced by stories centering on his unique life experiences.He starts off by relating some highly entertaining backstory on the Wolf of Wall Street movie, then moves into a history of his famous Straight Line Persuasion System, and why he was inspired to invent it.</p>
+          <p>Ibtissem Lassoued is a Partner and Head of Advisory in the Regional Financial Crime practice in Dubai. She graduated from the Sorbonne University (Paris) and joined Al Tamimi & Company in 2007 from the legal department of the French Group Vivendi, where she conducted primarily US litigation</p>  
+        <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote5"  href="#">Read More</a></p>
+          <div id="keynote5" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Ibtissem Lassoued</h3>
+              <p>Ibtissem Lassoued is a Partner and Head of Advisory in the Regional Financial Crime practice in Dubai.</p>
+
+              <p>She graduated from the Sorbonne University (Paris) and joined Al Tamimi & Company in 2007 from the legal department of the French Group Vivendi, where she conducted primarily US litigation (e.g. class actions, Securities and Exchange Commission (‘SEC’) and Department Of Justice (‘DOJ’) investigations.</p>
+
+              <p>Ibtissem has extensive experience advising a variety of clientele on a spectrum of white collar crime matters which have spanned the globe. Her expertise on these matters includes complex corporate fraud, tracing, freezing and recovery of assets, anti-money laundering, counter-terrorist financing, extradition (acting both for States submitting extradition requests and individuals who are subject of a request) and mutual judicial cooperation, including issues relating to foreign judgments and Interpol notices. In order to advise fully, Ibtissem offers clients a full and practical knowledge of the remit of inter-governmental organizations, in particular in relation to the FATF and MENAFATF, and the effect of the same on anti-corruption, confiscation of the proceeds of crime, de-risking and the reporting of suspicious transactions.</p>
+
+              <p>Furthermore, she frequently advises clients on international economic sanctions, counter-terrorist financing (particularly concerning charitable fundraising regulations), embezzlement, fraud and corruption, including advising multinational companies, global banks and international firms. Ibtissem is also experienced in assisting with multijurisdictional investigations where the applicability of foreign regulations needs to be considered (e.g. the anti-corruption laws such as the US FCPA and the UK Bribery Act).</p>
+               <p>Ibtissem has been ranked Band 1 in Chambers Global for the last four consecutive years, every year since the addition of the Corporate Investigations category, and was commended by sources as being “most effective” and “stunningly good at what she does”. She is also praised for her "very good reputation in challenging and interesting issues in the Middle East” and for being “well versed in anti-corruption and anti-bribery law, regularly advising multinationals and high net worth individuals. She has conducted a number of cross-border investigations and is well known for her white-collar crime practice.” Her international profile and engagement with the financial sector has led her to be ranked amongst Financial News’ 50 Most Influential Women in Middle East Finance in 2019.</p>
+          </div>
         </section>
-        <figure><img src="./minify/img/speakers_15.jpg" alt="Ibtissem Lassoued">
+        <figure><img src="./minify/img/ibtissim.png" alt="Ibtissem Lassoued">
          <span class="img-caption">
             <h5>Ibtissem Lassoued</h5>
             <h6>Partner, Head of Advisory - Regional Financial Crime Practice</h6>
@@ -241,25 +312,45 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
         </figure>
       </section><!--.keynote-speaker-wrap-->
     </div><!--.col-md-3 -->
-    <div class="col-md-3 col-sm-4">
+    <div class="col-md-3 col-sm-4"  data-aos-offset="300" data-aos="fade-up" data-aos-delay="800">
       <section class="keynote-speaker-wrap">
         <section class="txt-overlay">
-          <p>Experience Jordan Belfort live and in-person as he delivers a powerful and exiting blend of master level sales training, balanced by stories centering on his unique life experiences.He starts off by relating some highly entertaining backstory on the Wolf of Wall Street movie, then moves into a history of his famous Straight Line Persuasion System, and why he was inspired to invent it.</p>
+          <p>Richard F. Chambers, CIA, QIAL, CGAP, CCSA, CRMA, is president and chief executive officer of The Institute of Internal Auditors (IIA), the global professional association and standard-setting body for internal auditors. Founded in 1941, The IIA today serves more than 185,000 members in over 170 countries and territories</p>
+          <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote6"  href="#">Read More</a></p>
+          <div id="keynote6" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Richard Chambers</h3>
+              <p>Richard F. Chambers, CIA, QIAL, CGAP, CCSA, CRMA, is president and chief executive officer of The Institute of Internal Auditors (IIA), the global professional association and standard-setting body for internal auditors. Founded in 1941, The IIA today serves more than 185,000 members in over 170 countries and territories and is the internal audit profession’s most widely recognized advocate, educator, and provider of standards, guidance, and certifications.Chambers leverages more than four decades of internal audit and association management experience to direct more than 200 professional staff members at The IIA’s global headquarters located in Central Florida, achieving the agreed-upon strategies and objectives on behalf of The IIA’s North American and Global Boards of Directors.Since becoming global CEO in 2009, Chambers has led The IIA to record membership and the launch of a number of valuable initiatives to benefit members and the internal audit profession, including the Audit Executive Center; Pulse of Internal Audit; Audit Channel; Internal Auditor Online; the Certification in Risk Management Assurance (CRMA); the Qualification in Internal Audit Leadership (QIAL); The IIA Risk Resource Exchange; the American Center for Government Auditing; the Financial Services Audit Center; and the Environmental, Health and Safety Audit Center.In addition to championing high professional standards and ethical conduct, Chambers has made a career-long commitment to advocating for the internal audit profession around the world, educating influential government officials and standard-setting bodies about the crucial role internal auditors play in private and public sector organizations. Under Chambers’ leadership, The IIA also partners with national and global organizations on a number of key initiatives to advance the profession.Chambers builds awareness of and advocates for the internal audit profession through frequent public-speaking appearances, blogs, magazine articles, webcasts, outreach initiatives, and participation on influential boards and committees. He has been featured by numerous high-profile media outlets, including The Wall Street Journal, The New York Times, Financial Times, Reuters, Bloomberg Radio, and CNBC.</p>
+              
+            <p> Accounting Today has recognized Chambers as one of the Top 100 Most Influential People shaping the accounting profession and, since 2013, the National Association of Corporate Directors (NACD) has included him on its annual list of the most influential leaders in corporate governance. Active on social media, Chambers has been recognized by Accounting Today and Polecat as an industry thought leader to follow on Twitter.In 2014, Chambers authored the award-winning book, Lessons Learned on the Audit Trail, which is currently available in five languages. He has a new book, Trusted Advisors: Key Attributes of Outstanding Internal Auditors, due for release in early 2017.Chambers serves concurrently on the Committee of Sponsoring Organizations of the Treadway Commission (COSO) Board of Directors; the International Integrated Reporting Council (IIRC); and The IIA Board of Directors. He served on the U.S. President’s Council on Integrity and Efficiency; the NACD’s Blue Ribbon Committee for Audit Effectiveness; the Audit Board of the City of Orlando, Fla.; The IIA Internal Audit Standards Board; and The IIA North American Board. He is the recipient of the Association of Government Accountants (AGA) Frank Greathouse Distinguished Leadership Award and the National Association of Black Accountants (NABA) Legacy Award. In 2016, Chambers was honored by American City Business Journals’ Orlando Business Journal as a top CEO of the Year. Under his leadership, The IIA has been recognized annually as one of Central Florida’s Best Places to Work.Prior to assuming his current role in 2009, Chambers served as national practice leader in Internal Audit Advisory Services at PricewaterhouseCoopers and vice president of The IIA’s Learning Center. </p>
+            
+            <p>He spent the majority of his early career in public sector auditing, serving as inspector general of the Tennessee Valley Authority; deputy inspector general of the U.S. Postal Service; and director of the U.S. Army Worldwide Internal Review Organization at the Pentagon. Chambers is a Certified Internal Auditor (CIA), and holds numerous qualifications and certifications, including Qualification in Internal Audit Leadership (QIAL), Certified Government Auditing Professional (CGAP), Certification in Control Self-Assessment (CCSA), Certification in Risk Management Assurance (CRMA), and Certified Government Financial Manager (CGFM). He earned a Bachelor of Business Administration and a Master of Business Administration at Georgia State University, as well as a Master of Arts in International Relations at Salve Regina University. He also is a graduate of the U.S. Army War College.</p>
+          </div>
         </section>
-        <figure><img src="./minify/img/speakers_16.jpg" alt="Richard Chamber">
+        <figure><img src="./minify/img/richard.png" alt="Richard Chamber">
         <span class="img-caption">
-            <h5>Richard Chamber</h5>
-            <h6>Advanced Humanoid</h6>
+            <h5>Richard Chambers</h5>
+            <h6>President & CEO, The Institute of Internal Auditors</h6>
         </span>
         </figure>
       </section><!--.keynote-speaker-wrap-->
     </div><!--.col-md-3 -->
-    <div class="col-md-3 col-sm-4">
+    <div class="col-md-3 col-sm-4"  data-aos-offset="300" data-aos="fade-up" data-aos-delay="900">
       <section class="keynote-speaker-wrap">
         <section class="txt-overlay">
-          <p>Experience Jordan Belfort live and in-person as he delivers a powerful and exiting blend of master level sales training, balanced by stories centering on his unique life experiences.He starts off by relating some highly entertaining backstory on the Wolf of Wall Street movie, then moves into a history of his famous Straight Line Persuasion System, and why he was inspired to invent it.</p>
+          <p>Anton served as the Clients and Markets leader for the Africa firm and served on the Africa Firm’s leadership team from 2015 to 2019. He also served as PricewaterhouseCoopers’ Global Internal Audit Services leader between 2004 and 2009.</p>
+          <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote7"  href="#">Read More</a></p>
+          <div id="keynote7" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Anton van Wyk</h3>
+              <p>Anton served as the Clients and Markets leader for the Africa firm and served on the Africa Firm’s leadership team from 2015 to 2019. He also served as PricewaterhouseCoopers’ Global Internal Audit Services leader between 2004 and 2009.</p>
+              
+            <p>Anton has over 30 years experience in Corporate Governance, Risk Management and Internal Audit, and has worked with a range of local and global clients. Anton served as a board member of PwC’s Africa Governance and South African Governance Board between 2011 and 2014, and was a member of the firm’s Business School Board.</p>
+            
+            <p>Anton is a full member of the King Committee on Governance in South Africa. (Since 1999). He is also the Chairman of the South African Corporate Governance Network under the auspices of the IoD. Anton is a past Global Chairman of The Institute of Internal Auditors (IIA) – 2014 to 2015. He is the first individual from the African continent and the first South African to have lead the world’s largest internal audit organisation (200000 members). A notable highlight during Anton’s Chairman year was addressing members of the United Nations’ General Assembly in New York City, together with the Secretary General, Ban Ki-moon.</p>
+            <p>Anton has been a volunteer with the IIA since 1986.</p>
+            <p>Anton was awarded, in 2018, the Victor.Z.Brink award for distinguished service, by the Global IIA. The IIA recognised Anton as a dedicated volunteer, advocate, and leader whose guidance and extraordinary efforts have greatly impacted the profession of internal auditing, globally.</p>
+          </div>
         </section>
-        <figure><img src="./minify/img/speakers_17.jpg" alt="Anton Van Wyk">
+        <figure><img src="./minify/img/anton.png" alt="Anton Van Wyk">
       <span class="img-caption">
             <h5>Anton van Wyk</h5>
             <h6>Past Chairman, The Institute of Internal Auditors</h6>
@@ -267,12 +358,23 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
         </figure>
       </section><!--.keynote-speaker-wrap-->
     </div><!--.col-md-3 -->
-    <div class="col-md-3 col-sm-4">
+    <div class="col-md-3 col-sm-4"  data-aos-offset="300" data-aos="fade-up" data-aos-delay="1000">
       <section class="keynote-speaker-wrap">
         <section class="txt-overlay">
-          <p>Experience Jordan Belfort live and in-person as he delivers a powerful and exiting blend of master level sales training, balanced by stories centering on his unique life experiences.He starts off by relating some highly entertaining backstory on the Wolf of Wall Street movie, then moves into a history of his famous Straight Line Persuasion System, and why he was inspired to invent it.</p>
+          <p>Scott Amyx is the Chair & Managing Partner at Amyx Ventures, Forbes New York Business Council Member, Singularity University/ Smart City Accelerator mentor and startup board member and SXSW Pitch (formerly SXSW Accelerator) judge. </p>
+          <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote8"  href="#">Read More</a></p>
+          <div id="keynote8" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Scott Amyx</h3>
+              <p>Scott Amyx is the Chair & Managing Partner at Amyx Ventures, Forbes New York Business Council Member, Singularity University/ Smart City Accelerator mentor and startup board member and SXSW Pitch (formerly SXSW Accelerator) judge. Scott is a Tribeca Disruptor Foundation Fellow, a disruptive innovation awards program of Tribeca Film Festival. Scott is a national Sloan Fellow/ Woodrow Wilson Fellow. He has spoken at TEDx on exponential technologies, Fourth Industrial Revolution & success. Scott is a global thought leader on breakthrough innovation, voted top global innovation keynote speaker, and author on smart cities, the Fourth Industrial Revolution and winner of the Cloud & DevOps World Award for Most Innovative and was voted Top Global Exponential Technologies Expert by Inc. Magazine, HP Enterprise, and Postscapes & Top 10 Global Innovation Keynote Speaker by Speaking.com. Scott has been nominated to the World Economic Forum as a committee member for the Future of the Internet. The Republic of Korea nominated Scott to present at the ITU Telecom World, United Nations. Sovereignties, governments, multinationals, and international consulting & research firms look to Scott for unrivaled insights and pulse on the changing landscape.</p>
+
+              <p>Scott was voted the Most Influential Leader in Smart Cities and awarded the 50 Most Impactful Smart Cities Leaders by Inc. Magazine, Internet of Things Institute, HP Enterprise, World CSR Congress, and numerous institutions. Scott is enabling the realization of a global network of smart, sustainable cities through his partnerships with the United Nations, United Smart Cities, United for Smart Sustainable Cities, Smart Cities Council, and ASEAN Smart Cities Network, family offices, and institutional investors.</p>
+
+              <p>Scott has been featured on New York Times, TIME, Forbes, The Washington Post, WIRED, TechCrunch, Inc., Pew Research, Chicago Tribune, InformationWeek, Forrester, Gigaom, ReadWrite, Shots Magazine, Business News Daily, IBM Big Data & Analytics, Intel, Geektime, Examiner, TechBeacon, EE Times, IEEE, El País, Costco Magazine, and television and radio programs. He has spoken or scheduled to speak at TED, European Commission, World Economic Forum, ITU Telecom World (United Nations), International CES, SXSW, IBM Insight, IBM Amplify, IBM Watson IoT, IBM InterConnect, PTC LiveWorx, AMEX, SAP, CRM Evolution, THINK!, NED, Cloud Expo Europe, Cloud & DevOps World, KAIST, Samsung SDS, ArabNet Dubai & Riyadh, Internet Summit, JCK Las Vegas, Customer Service Experience, Razorfish Tech Summit, Location & Context World, Internet of Things World, K-Global Startup, and more. Scott is the co-author of Internet of Things and Data Analytics Handbook, an academic publication by John Wiley and Sons and The Advances in Information Security, Privacy, & Ethics (AISPE) Book Series: Managing Security Issues and the Hidden Dangers of Wearable Technologies, an academic publication by IGI Global.</p>
+
+              <p>Scott is the author of Strive: How Doing the Things Most Uncomfortable Leads to Success, which has been endorsed by Tony Robbins, Forbes, Singularity University, Tribeca Film Festival, and other global influencers</p>
+          </div>
         </section>
-        <figure><img src="./minify/img/speakers_18.jpg" alt="Scott Amyx">
+        <figure><img src="./minify/img/scott.png" alt="Scott Amyx">
              <span class="img-caption">
             <h5>Scott Amyx</h5>
             <h6>Managing Partner, Amyx Ventures</h6>
@@ -289,25 +391,65 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
       <div class="row">
         <div class="col-md-10 mx-auto">
 <div class="row">
-  <section class="text-center keynote-header section-header col-md-12">
-    <h2>other Speaker</h2>
+  <section class="text-center keynote-header section-header col-md-12"  data-aos="fade-up" data-aos-delay="100">
+    <h2>Other Speaker</h2>
   </section>
   <div class="clearfix"></div>
-  <div class="col-md-4"> <figure><img src="./minify/img/speakers_27.jpg" alt="Jordan Belfort">
+  <div class="col-md-4"  data-aos-offset="400" data-aos="fade-up" data-aos-delay="200"> 
+       <section class="keynote-speaker-wrap">
+        <section class="txt-overlay">
+          <p>A self-driven and ambitious leader with ten years of experience in the internal audit, risk management, and information security with diverse industry experience of financial institutions, tourism and hospitality industries. </p>
+             <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote01"  href="#">Read More</a></p>
+          <div id="keynote01" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Ayesha bin Lootah</h3>
+              <p>A self-driven and ambitious leader with ten years of experience in the internal audit, risk management, and information security with diverse industry experience of financial institutions, tourism and hospitality industries. With more than six years’ board of governance experience of the Institute of Internal Auditors – UAE Association, and have chaired many several committees’ part of the board of the governance and of the international audit conference. I also hold several committee’s positions within the tourism board of Dubai. I am a certified governance practitioner from the UK affiliation of corporate governance practitioner and a COSO certified.</p>
+          </div>
+        </section>
+       <figure><img src="./minify/img/ayesha.png" alt="Ayesha bin Lootah">
         <span class="img-caption">
             <h5>Ayesha bin Lootah</h5>
             <h6>Director - Internal Audit Dept.</h6>
         </span>
-  </figure>   </div>
-  <div class="col-md-4"> <figure><img src="./minify/img/speakers_29.jpg" alt="Jordan Belfort">
+  </figure>  
+      </section>
+    </div>
+  <div class="col-md-4"  data-aos-offset="400" data-aos="fade-up" data-aos-delay="300">
+     <section class="keynote-speaker-wrap">
+             <section class="txt-overlay">
+          <p>Michael J. Fucilli (CIA, QIAL, CRMA, CGAP, CFE), is the CAE for a large Public Sector company with Revenues in excess of $15 billion. </p>
+             <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote3"  href="#">Read More</a></p>
+          <div id="keynote3" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Michael J. Fucilli</h3>
+              <p>Michael J. Fucilli (CIA, QIAL, CRMA, CGAP, CFE), is the CAE for a large Public Sector company with Revenues in excess of $15 billion. Mike has over 35 years of internal auditing experience that includes Financial Services, Public Sector, Inventory Management, Technology & SOX Reporting. Mike has an audit staff of 85 professionals and is on the Institute of Internal Auditors’ Research Foundation Board of Directors. He was recently on the IIA North American Board and Global Board. Mike is also an Adjunct Professor for Pace University where he teaches the IIA Learning System for the Certified Internal Auditor Exam.</p>
+          </div>
+        </section>
+      <figure>
+    <img src="./minify/img/micheal.png" alt="Michael J. Fucillih">
     <span class="img-caption">
-            <h5>Michael J. Fucillih</h5>
+            <h5>Michael J. Fucilli</h5>
             <h6>Audit General, New York Metropolitan Transport Authority, USA</h6>
         </span>
-  </figure>   </div>
-  <div class="col-md-4"> <figure><img src="./minify/img/speakers_24.png" alt="Jordan Belfort">
-     <span class="img-caption">   <h5>Saeed Aldhaheri </h5> </span>
-  </figure>   </div>
+  </figure>
+      </section>
+    </div>
+  <div class="col-md-4"   data-aos-offset="400" data-aos="fade-up" data-aos-delay="400">
+      <section class="keynote-speaker-wrap">
+              <section class="txt-overlay">
+          <p>Dr Aldhaheri is a veteran of the UAE technology industry with over 30 years of experience in driving technology adoption in various public sector organisations. </p>
+             <p><a data-featherlight=".keynote-popup" class="speakerdetail" data-id="keynote3"  href="#">Read More</a></p>
+          <div id="keynote3" class="txt-overlay-fulltext" style="display: none;">
+             <h3>Saeed Aldhaheri </h3>
+              <p>Dr Aldhaheri is a veteran of the UAE technology industry with over 30 years of experience in driving technology adoption in various public sector organisations. He has been the Director General of the Emirates ID Authority, a member of the scientific advisory committee of the UAE Space Agency, an Advisor to the Minister of Foreign Affairs on information technology, a Professor at the UAE University and the Vice President of the Emirates Information Technology Society. Currently, he is an Advisor to several public and private sector organisations in the UAE, and assessor of various excellence programs and awards, including the GCC e-government Award. He is also the Chairman of Smartworld and a board member of the Emirates Safer Internet Society. His interest includes researching and presenting about topics including Smart cities, future foresight and the fourth industrial revolution technologies and their impact on business and society.</p>
+          </div>
+        </section>
+      <figure><img src="./minify/img/Saeed.png" alt="Saeed Aldhaheri">
+     <span class="img-caption">
+         <h5>Saeed Aldhaheri </h5>
+         <h6>Chairman of the board, Smartworld</h6>
+    </span>
+  </figure> 
+      </section>
+</div>
 </div><!--.row-->
         </div>
 
@@ -316,17 +458,17 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
   </div><!--.keynote-speaker-->
 
  </div><!--.fold3 keynote-->
-<div id="agenda" class="agenda-container">
+<div id="agenda" class="agenda-container" data-aos="fade-up" data-aos-delay="100">
   <div class="container">
     <div class="row">
 <div class="col-md-12">
-  <section class="section-header">
+  <section class="section-header" data-aos="fade-up" data-aos-delay="200">
     <h2>Agenda</h2>
   </section>
 </div>
 <div class="clearfix"></div>
 
-<div class="col-md-6 day-one">
+<div class="col-md-6 day-one" data-aos-offset="400" data-aos="fade-right" data-aos-delay="100">
 <div class="agenda-wrap">
 <date class="agenda-wrap-date float-left">1</date>
 <section class="agenda-wrap-date-meta float-left">
@@ -446,7 +588,7 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
 </div><!--.agenda-wrap-container-->
 </div><!--.agenda-wrap-->
 </div><!--.day-one-->
-<div class="col-md-6 day-two">
+<div class="col-md-6 day-two" data-aos-offset="400" data-aos="fade-left" data-aos-delay="100">
 <div class="agenda-wrap">
 <date class="agenda-wrap-date float-left">2</date>
 <section class="agenda-wrap-date-meta  float-left">
@@ -571,33 +713,34 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
  </div><!--.container-->
 
 </div><!--.agenda-container-->
-<div id="partners" class="partner-container">
+<div id="partners" class="partner-container" data-aos="fade-up" data-aos-delay="100">
 <div class="container">
   <div class="row">
-     <section class="section-header col-md-12 mb-3">
+     <section class="section-header col-md-12 mb-3" data-aos="fade-up" data-aos-delay="200">
     <h2>Partners / Sponsors</h2>
   </section>
    <div class="clearfix"></div>
-    <div class="col-md-5 partner-lft">
+    <div class="col-md-5 partner-lft" data-aos="fade-right" data-aos-delay="200">
       <h5>Key-Partners</h5>
       <ul>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="100">
           <figure><img class="hvr-grow" src="./minify/img/key-partner-one.png" alt="protiviti"></figure>
-        </li> <li>
+        </li> 
+        <li data-aos="fade-up" data-aos-delay="200">
           <figure><img class="hvr-grow" src="./minify/img/key-partner-two.png" alt="pwc"></figure>
         </li>
       </ul>
     </div>
-    <div class="col-md-7 partner-rht">
+    <div class="col-md-7 partner-rht" data-aos="fade-right" data-aos-delay="300">
       <h5>Sponsors</h5>
       <ul>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="100">
           <figure><img src="./minify/img/Sponsor.png" alt="protiviti"></figure>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="200">
           <figure><img src="./minify/img/Sponsor2.png" alt="pwc"></figure>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="300">
           <figure><img src="./minify/img/Sponser3.png" alt="pwc"></figure>
         </li>
       </ul>
@@ -613,16 +756,16 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
 <div class="col-md-12 mx-auto footer-wrap1 text-center">
   <ul>
     <li>DWTC, DUBAI</li>
-    <li>04-3999799</li>
+    <li><a href="tel:+97143999799">+971 4 399 9799</a></li>
     <li><a href="mailto:events@uaeiaa.org">events@uaeiaa.org</a></li>
   </ul>
 </div><!--.footer-wrap1-->
-<div class="col-md-12 mx-auto footer-wrap2  text-center">
+<div class="col-md-12 mx-auto footer-wrap2  text-center" data-aos-offset="20" data-aos="fade-up" data-aos-delay="100">
   <ul>
-    <li><a class="hvr-grow" href="#_"><i class="fab fa-facebook-f"></i></a></li>
-    <li><a class="hvr-grow" href="#_"><i class="fab fa-twitter"></i></a></li>
-    <li><a class="hvr-grow" href="#_"><i class="fab fa-instagram"></i></a></li>
-    <li><a class="hvr-grow" href="#_"><i class="fab fa-linkedin-in"></i></a></li>
+    <li><a class="hvr-grow" href="https://www.facebook.com/UAEIAAofficial/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a class="hvr-grow" href="https://twitter.com/UAEIAAofficial" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li><a class="hvr-grow" href="https://www.instagram.com/uaeiaaofficial/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a class="hvr-grow" href="https://www.linkedin.com/in/uae-internal-auditors-association-824158171/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
   </ul>
 </div>
 
@@ -632,13 +775,13 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
   <div class="footer-btm w-100 mt-3">
       <div class="container">
           <div class="row">
-              <div class="col-md-6 copyright">
+              <div class="col-md-6 copyright" data-aos-offset="20" data-aos="fade-right" data-aos-delay="100">
 <p>Copyright © 2020 UAE Internal Auditors Association</p>
 </div>
-<div class="col-md-3 offset-md-3 footer-menu">
+<div class="col-md-3 offset-md-3 footer-menu" data-aos-offset="20"  data-aos="fade-left" data-aos-delay="100">
 <ul>
-  <li class="hvr-grow"><a href="#">Terms of Use</a></li>
-  <li class="hvr-grow"><a href="#">Privacy Policy </a></li>
+  <li class="hvr-grow"><a href="https://www.uaeiaa.org/terms-and-conditions.htm">Terms of Use</a></li>
+  <li class="hvr-grow"><a href="https://www.uaeiaa.org/privacy-policy.htm">Privacy Policy </a></li>
 </ul>
 </div>
           </div>
@@ -650,13 +793,14 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
 
   </div><!--.main-wrapper-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./js/intlTelInput.min.js"></script>
-  <script src="./js/custom.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+  <script src="./js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <script src="./js/featherlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/custom.js"></script>
 
-  <div class="lightbox popup" id="fl1">
+  <!--LightBox Start here-->
+<div class="lightbox popup" id="fl1">
 		<table>
 		    <tr>
 		        <th class="popup-banner">
@@ -692,6 +836,39 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
 		    
 		</table>
 		<small>All above prices are inclusive of 5% VAT.</small>
-		</div>
+    </div>
+<div class="lightbox abt-popup" id="abt_readmore">
+	<section class="container">
+   <div class="row">
+       <div class="col-md-12 col-md-12 p-0">
+            <section class="abt-popup-detail">
+                 <p> "The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Shaping IA” will be held from April 12 - 14, 2020 at the Dubai International Convention and Exhibition Center. The 20th ARAC is widely considered the largest “Smart” conference and premier training event related to Internal Audit in the Middle East. The Conference is preceded by a Pre-conference workshop day on 12th April 2020. Targeting 1500+ professionals to attend the event from the Middle East &amp; North Africa region, the conference will give the delegates a great opportunity to interact with the who’s who and hear some great speakers and professionals who have in them the ability to influence change in the profession. This future-oriented conference boasts of world-class professional development sessions.</p>
+<p>This is your chance to experience an event which is prepared by keeping in mind the way the upcoming future will influence the world of internal audit. The various themed sessions will have something in them for everyone. With an opportunity to network with professionals and leaders, do not miss out on the chance to note the upcoming trends in technology which will reshape internal audit in the days ahead. Visit the booths of our key partners, sponsors and exhibitors and you will be surprised at how much they have to offer. Interact with them on a one-to-one and get to know their offerings to help you succeed.<br>
+</p>
+<p>To enable you to maintain your IIA certifications and qualifications, the conference provides an opportunity to earn up to 13 Continuing Professional Education (CPE) credit hours over the 2 main days of the conference (April 13-14, 2020). Earn an additional 7 CPEs when you attend the pre-conference workshops.s
+</p>
+<p>Last but not the least, enjoy your stay in the vibrant city of Dubai. Record-breaking architecture stands alongside traditional quarters, while man-made islands just out of the striking coastline. Dubai has turned into an international destination connect the West to East. Enjoy the experience from famous tourist destinations such as Burj Khalifa, the world’s tallest building or relaxing on pristine beaches or dashing off to the dunes for an adventure. Experience this and much more."</p>
+            </section>
+            
+       </div>
+   </div>
+	 
+	</section>
+    </div>
+<div class="lightbox keynote-popup">
+           <div class="container">
+               <div class="row">
+                   <div class="keynote-popup-content "></div>
+               </div>
+           </div>
+</div><!--keynote-popup-->
+<section class="floating_icons">
+      <ul>
+          <li class="hvr-wobble-horizontal"><a href="https://api.whatsapp.com/send?phone=+971909505239&amp;text=Hello... ! Greeting from Happenize" class="whstapp_float" target="_blank">
+<img src="./minify/img/whatsapp-icon.png" alt="whatsapp" />
+  </a></li>
+          <li class="hvr-wobble-horizontal"><a class="phone_float" href="tel:+97143889000"><img src="./minify/img/float-phone-icon.png" alt="whatsapp" /></a></li>
+      </ul>
+  </section>
 </body>
 </html>

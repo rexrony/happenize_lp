@@ -8,7 +8,7 @@
 
 html.with-featherlight {
 	/* disable global scrolling when featherlights are visible */
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 .featherlight {
@@ -56,8 +56,8 @@ html.with-featherlight {
 
 	/* dimensions: cut off images */
 	overflow: visible;
-	padding: 5px 5px 0;
-	border-bottom: 25px solid transparent;
+	padding: 5px 5px 5px;
+	border-bottom: 0px solid transparent;
 
 	/* dimensions: handling large content */
 	margin-left: 5%;
@@ -89,33 +89,35 @@ html.with-featherlight {
 	/* position: centering vertical and horizontal */
 	position: absolute;
 	z-index: 9999;
-	top: 0;
-	right: 0;
+	top: -14px;
+	right: -14px;
 
 	/* dimensions: 25px x 25px */
-	line-height: 25px;
-	width: 25px;
+	line-height: 20px;
+	width: 40px;height: 40px;
 
 	/* styling */
 	cursor: pointer;
 	text-align: center;
 	font-family:inherit;
 	background: #fff; /* Set the background in case it overlaps the content */
-	background: rgba(255, 255, 255, 0.3);
-	color: #000;
+	background:#19406f;
+	color: #fff;
 	border: none;
-	padding: 0;
+	padding: 5px;
+    border-radius: 25px;
+    outline: none;
 }
 
 /* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */
 .featherlight .featherlight-close-icon::-moz-focus-inner {
 	border: 0;
-	padding: 0;
+	padding: 0; outline: none;
 }
 
 .featherlight .featherlight-image {
 	/* styling */
-	width: 100%;
+	width: 100%; outline: none;
 }
 
 
