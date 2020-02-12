@@ -96,14 +96,14 @@ function makeTimer() {
       // dropdownContainer: document.body,
       // excludeCountries: ["us"],
       // formatOnDisplay: false,
-      // geoIpLookup: function(callback) {
-      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-      //     var countryCode = (resp && resp.country) ? resp.country : "";
-      //     callback(countryCode);
-      //   });
-      // },
+       geoIpLookup: function(callback) {
+         $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+           var countryCode = (resp && resp.country) ? resp.country : "";
+           callback(countryCode);
+        });
+       },
       // hiddenInput: "full_number",
-       //initialCountry: "auto",
+       initialCountry: "auto",
       // localizedCountries: { 'de': 'Deutschland' },
       // nationalMode: false,
       // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
@@ -170,14 +170,25 @@ $('a[href*=\\#]:not([href=\\#])').on('click', function() {
       disable: 'mobile'
     });
 
- /***Form Validation****/
-$("#contact-attorney .btn").click(function(e){
+/**Phone Numbers only validation***/
+ $("#user_phone").keypress(function (e) {
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        //display error message
+        $("#phone-error").html("Digits Only").show().fadeOut("slow");
+               return false;
+    }
+   });
+/***Form Validation****/
+$(".register_form_wrap .btn").click(function(e){
+    
+    console.log('Form Validate');
       e.preventDefault();
-  var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
-var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+     var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
+     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
      var name = $("#fullname").val();
      var emailaddress = $("#user_email").val();
-   var phone = $("#user_phone").val();
+      var phone = $("#user_phone").val();
    
       if(name == "" || name.length < 3){  $("#name-error").html('Please Enter Name'); }
       else{ $("#name-error").html(''); }

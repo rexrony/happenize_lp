@@ -85,17 +85,17 @@
                 </figure>
                  <div class="clear"></div>
                  <section class="register_form_wrap">
-                 <form action="">
+                 <form method="post">
                   <div class="form-group"><input type="text" class="form-control" id="fullname" placeholder="Name">
-                    <span id="name-error"></span>
+                    <span class="form-error" id="name-error"></span>
                   </div>
                    <div class="form-group"><input type="email" class="form-control" id="user_email" placeholder="Email">
-                    <span id="email-error"></span>
+                    <span  class="form-error" id="email-error"></span>
                   </div>
-                   <div class="form-group"><input type="tel" class="form-control" id="user_phone" placeholder="Phone">
-                    <span id="phone-error"></span>
+                   <div class="form-group"><input maxlength="14" type="tel" class="form-control" id="user_phone" placeholder="Phone">
+                    <span class="form-error" id="phone-error"></span>
                   </div>
-                   <div class="form-group"><input type="submit" value="Submit" class="hvr-shrink" /></div>
+                   <div class="form-group"><input type="submit" value="Submit" class="hvr-shrink btn" /></div>
                 </form>
                  </section>       
                 </section>   
@@ -197,7 +197,7 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
       <div class="row">
         <div class="col-md-12">
           <section class="text-center keynote-header section-header mb-5" data-aos-offset="200"  data-aos="fade-up" data-aos-delay="200">
-            <h2>Keynote Speaker</h2>
+            <h2>Keynote Speakers</h2>
           </section>
 
         </div>
@@ -408,7 +408,7 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
         <div class="col-md-10 mx-auto">
 <div class="row">
   <section class="text-center keynote-header section-header col-md-12"  data-aos="fade-up" data-aos-delay="100">
-    <h2>Other Speaker</h2>
+    <h2>Other Speakers</h2>
   </section>
   <div class="clearfix"></div>
   <div class="col-md-4"  data-aos-offset="400" data-aos="fade-up" data-aos-delay="200"> 
@@ -934,7 +934,34 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
     </div>
     <div class="col-md-7 partner-rht" data-aos="fade-right" data-aos-delay="300">
       <h5>Sponsors</h5>
-      <ul>
+      <div id="tabs-container">
+    <ul class="tabs-menu">
+        <li class="current"><a href="#tab-1">Silver</a></li>
+        <li><a href="#tab-2">Bronze</a></li>
+    </ul>
+    <div class="tab">
+        <div style="display: block;" id="tab-1" class="tab-content silver">
+         <ul class="logos">
+        <li data-aos="fade-up" data-aos-delay="100">
+          <figure><img src="./minify/img/Sponsor.png" alt="protiviti"></figure>
+        </li>
+        
+      </ul>
+        </div>
+        <div id="tab-2" class="tab-content">
+            <ul class="logos">
+        <li data-aos="fade-up" data-aos-delay="200">
+          <figure><img src="./minify/img/Sponsor2.png" alt="pwc"></figure>
+        </li>
+        <li data-aos="fade-up" data-aos-delay="300">
+          <figure><img src="./minify/img/Sponser3.png" alt="pwc"></figure>
+        </li>
+      </ul>
+        </div>
+
+    </div><!--.tab-->
+</div><!--#tabs-container-->
+      <ul class="d-none">
         <li data-aos="fade-up" data-aos-delay="100">
           <figure><img src="./minify/img/Sponsor.png" alt="protiviti"></figure>
         </li>
@@ -956,7 +983,7 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
     <div class="row">
 <div class="col-md-12 mx-auto footer-wrap1 text-center">
   <ul>
-    <li>DWTC, DUBAI</li>
+      <li><a target="_blank" href="https://www.dwtc.com/en/campus-map">DWTC, DUBAI</a></li>
     <li><a href="tel:+97143999799">+971 4 399 9799</a></li>
     <li><a href="mailto:events@uaeiaa.org">events@uaeiaa.org</a></li>
   </ul>
@@ -981,8 +1008,8 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
 </div>
 <div class="col-md-3 offset-md-3 footer-menu" data-aos-offset="20"  data-aos="fade-left" data-aos-delay="100">
 <ul>
-  <li class="hvr-grow"><a href="https://www.uaeiaa.org/terms-and-conditions.htm">Terms of Use</a></li>
-  <li class="hvr-grow"><a href="https://www.uaeiaa.org/privacy-policy.htm">Privacy Policy </a></li>
+  <li class="hvr-grow"><a target="_blank" href="https://www.uaeiaa.org/terms-and-conditions.htm">Terms of Use</a></li>
+  <li class="hvr-grow"><a target="_blank" href="https://www.uaeiaa.org/privacy-policy.htm">Privacy Policy </a></li>
 </ul>
 </div>
           </div>
@@ -1107,10 +1134,10 @@ The 20th Annual Regional Audit Conference (ARAC) themed “Future Technology Sha
 </div><!--keynote-popup-->
 <section class="floating_icons">
       <ul>
-          <li class="hvr-wobble-horizontal"><a href="https://api.whatsapp.com/send?phone=+971909505239&amp;text=Hello... ! Greeting from Happenize" class="whstapp_float" target="_blank">
+          <li class="hvr-wobble-horizontal"><a href="https://api.whatsapp.com/send?phone=+971553512335&amp;text=Hello... ! Greeting from ARAC" class="whstapp_float" target="_blank">
 <img src="./minify/img/whatsapp-icon.png" alt="whatsapp" />
   </a></li>
-          <li class="hvr-wobble-horizontal"><a class="phone_float" href="tel:+97143889000"><img src="./minify/img/float-phone-icon.png" alt="whatsapp" /></a></li>
+          <li class="hvr-wobble-horizontal"><a class="phone_float" href="tel:+97143999799"><img src="./minify/img/float-phone-icon.png" alt="whatsapp" /></a></li>
       </ul>
   </section>
 </body>

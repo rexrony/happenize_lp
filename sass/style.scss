@@ -263,7 +263,7 @@ transform: translateY(0px);
     & .partner-lft{
         & h5{ background: #19406f; font-size: 18px; font-weight: 300; font-family: $brandonlight; color: #fff;padding: 3px 15px;display: inline-block;
         }
-        & ul{margin: 0px; padding: 0px; list-style: none;
+        & ul{margin: 50px 0 0 0; padding: 0px; list-style: none;
             & li{margin:0px; list-style: none; display: inline-block; margin-right: 60px;
                 &::last-child{margin-right: 0px;}
                 & img{ margin: 0px auto; display: block; }
@@ -273,7 +273,7 @@ transform: translateY(0px);
        & .partner-rht{
         & h5{ background: #19406f; font-size: 18px; font-weight: 300; font-family: $brandonlight; color: #fff;padding: 3px 15px;display: inline-block;
         }
-        & ul{margin: 0px; padding: 0px; list-style: none;
+        & ul.logos{margin: 0px; padding: 0px; list-style: none;
             & li{margin:0px; list-style: none; display: inline-block; margin-right: 60px; margin-bottom: 10px;
                 &:nth-child(0) img{position: relative; top:-5px}
                 &::last-child{margin-right: 0px;}
@@ -469,6 +469,23 @@ transition: background 2s ease;
 @keyframes fadeInRight {
 0%{opacity:0;left:20%}
 100%{opacity:1;left:0}
+}
+.form-error{font-size: 12px; color:red;}
+/* ---------------------------------------------------Tabs-------------------------------------------------------------------------*/
+.tabs-menu {min-height: 30px; max-height: 77px; padding:0; margin:0 auto; width: 100%;}
+.tabs-menu li {    text-align: center;line-height: 35px; min-height: 35px;width:auto; min-width: 35px; display:inline-block; list-style:none; margin-right:0px;background-color: #fff;    font-family:$brandonlight;
+    &:nth-child(1){background: #646464;}
+    &:nth-child(2){    background: #BE3D05;}
+}
+.tabs-menu a{color:#fff;padding: 10px 30px;letter-spacing: 0.5px;font-size: 17px;}
+.tabs-menu .current a {color: #fff;  }
+.tab {background-color:transparent;float: left;margin-bottom: 0px;width: auto; margin-top:0px;border-radius: 20px;}
+.tab-content {max-width: 660px;padding: 20px;display: none; width: 100%;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
 }
 
 /***Reponsive***/
